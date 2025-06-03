@@ -1,0 +1,151 @@
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1199px;
+}
+.com-gap{
+    padding: 100px 0;
+}
+
+html {
+ font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+:root{
+    --grey:#c1c0c0;
+    --white:#ffffff;
+    --brown:#8b7272;
+    --text:#2090f2;
+}
+.btn{
+    display: inline-block;
+    padding: 15px 30px;
+    background:var(--brown);
+    color: var(--white);
+    margin-top: 40px;
+    margin:0 20px;
+}
+input::placeholder{
+    color: var(--grey);
+    
+
+}
+
+figure{
+    display: block;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    clip-path: circle(42.9% at 50% 50%);
+    max-width: 350px;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: 48px;
+    line-height: 1.1;
+
+}
+p{
+    line-height: 1.2;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+
+/* banner */
+
+.row{
+    display: flex;
+    align-items: center;
+}
+.col-6{
+    width: 50%;
+}
+.red-form{
+    background-color: var(--grey);
+    padding: 50px 0;
+    border-radius: 5px;
+
+}
+
+label, input{
+    display: block;
+    font-size: 22px;
+    margin:0 20px;
+}
+label{
+    font-size: 24px;
+}
+input{
+    padding: 15px 120px;
+    background-color: var(--white);
+    text-wrap: wrap;
+    border-radius: 5px;
+    border: none;
+
+}
+.more-hold{
+    font-size: 22px;
+
+    padding: 80px 120px;
+}
+@media screen and (max-width:1199px) {
+    .row{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media screen and (max-width:991px) {
+    .col-6{
+        width: 100%;
+    }
+    .red-form{
+        padding: 20px 0;
+    }
+    .more-hold{
+        padding: 40px 120px;
+    }
+    
+}
+@media screen and (max-width:767px) {
+    .red-form{
+        padding: 20px 0;
+    }
+    .more-hold{
+        padding: 40px 50px;
+    }
+    input{
+        padding: 15px 50px;
+    }
+}
+@media screen and (max-width:575px) {
+    .red-form{
+        padding: 20px 0px;
+    }
+    .more-hold{
+        padding: 40px 40px;
+    }
+    input{
+        padding: 15px 40px;
+    }
+    p{
+        font-size: 16px;
+    }
+    h1{
+        font-size: 32px;
+    }
+}
